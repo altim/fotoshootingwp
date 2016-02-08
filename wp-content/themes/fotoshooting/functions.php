@@ -48,3 +48,16 @@ function register_menus() {
     );
 }
 add_action( 'init', 'register_menus' );
+
+/**
+ * Register sidebars for footer
+ */
+if(function_exists("register_sidebar")){
+
+    register_sidebar(array("name"=>"Footer_1", "id"=>"Footer_1"));
+    register_sidebar(array("name"=>"Footer_2", "id"=>"Footer_2"));
+    register_sidebar(array("name"=>"Footer_3", "id"=>"Footer_3"));
+    register_sidebar(array("name"=>"Footer_4", "id"=>"Footer_4"));
+    register_sidebar(array("name"=>"Social_menu", "id"=>"Social_menu"));
+
+}
