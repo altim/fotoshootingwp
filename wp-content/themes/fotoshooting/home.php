@@ -70,13 +70,11 @@
     </div>
 
     <div class="hero-wrapper" >
-        <img src="<?php echo get_template_directory_uri(); ?>/img/img-hero.jpg" alt="hero" class="img-responsive" />
+        <img src="<?php the_field('header_image'); ?>" alt="hero" class="img-responsive" />
         <div class="hero-inner">
             <div class="text-box text-box-left">
-                <h3>H3 Monatsspecial</h3>
-                <h1>H1 Bereit für ein
-                    besonderes
-                    Fotoshooting? </h1>
+                <h3><?php the_field('header_title'); ?></h3>
+                <h1><?php the_field('header_text'); ?></h1>
             </div>
         </div>
     </div>
@@ -84,207 +82,11 @@
 
     <main>
 
-        <div class="row">
-            <div class="col4">
-                <div class="box">
-                    <h2>H2 Lorem net Ipsum esto </h2>
-                    <h4>H4 Sei der Star in unserem 660m²
-                        grossen Fotostudio mit über 80
-                        unterschiedlichen Sets. Fotograf
-                        Peter Sturn als professioneller Foto-
-                        graf hilft Dir mit seinem Team bei
-                        der Erstellung Deiner Traumfotos. </h4>
-
-                    <a href="#" class="btn-1"><h5>H5 Weitere Informationen</h5></a>
-                </div>
-            </div>
-
-            <div class="col4">
-                <div class="box">
-                    <h2>H2 Lorem net Ipsum esto </h2>
-                    <h4>H4 Sei der Star in unserem 660m²
-                        grossen Fotostudio mit über 80
-                        unterschiedlichen Sets. Fotograf
-                        Peter Sturn als professioneller Foto-
-                        graf hilft Dir mit seinem Team bei
-                        der Erstellung Deiner Traumfotos. </h4>
-
-                    <a href="#" class="btn-1"><h5>H5 Weitere Informationen</h5></a>
-                </div>
-            </div>
-
-            <div class="col4">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/placeholders/facebook-widget.jpg" class="img-responsive facebook_widget" alt="facebook_widget" />
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="col12">
-                <div class="card card12">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/img-full-size.jpg" alt="" class="img-responsive"/>
-                    <div class="text-box text-box-right">
-                        <h3>H3 Monatsspecial</h3>
-                        <h1>H1 Bereit für ein
-                            besonderes
-                            Fotoshooting? </h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col8">
-                <div class="card card8">
-                    <div class="card-top">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/img-col-8-1.jpg" alt="" />
-                    </div>
-                    <div class="card-bottom">
-                        <h2>H2 Lorem net Ipsum esto </h2>
-                        <h4>H4 Unterschiedlichen Sets. Fotograf Peter Sturn als professioneller Fotograf hilft Dir mit seinem Team bei der Erstellung Deiner Traumfotos. </h4>
-
-                        <a href="#" class="btn-1"><h5>H5 Weitere Informationen</h5></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col4">
-                <div class="card card4">
-                    <div class="card-top">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/img-col-4-1.jpg" alt="" />
-                    </div>
-                    <div class="card-bottom">
-                        <h2>H2 Lorem net</h2>
-                        <h4>H4 Unterschiedlichen Fotograf Peter hilft Dir mit Traumfotos. </h4>
-
-                        <a href="#" class="btn-1"><h5>H5 Weitere Informationen</h5></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="col12">
-                <div class="card card12">
-                    <div class="card-top">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/img-full-combined.jpg" alt="" />
-                    </div>
-                    <div class="card-bottom">
-                        <h2>H2 Lorem net Ipsum esto </h2>
-                        <h4>H4 Unterschiedlichen Sets. Fotograf Peter Sturn als professioneller Fotograf hilft<br/>Dir mit seinem Team bei der Erstellung Deiner Traumfotos. </h4>
-
-                        <a href="#" class="btn-1"><h5>H5 Weitere Informationen</h5></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="row">
-            <div class="col4">
-                <div class="card card4">
-                    <div class="card-top">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/img-col-4-3.jpg" alt="" />
-                    </div>
-                    <div class="card-bottom">
-                        <h2>H2 Lorem net</h2>
-                        <h4>H4 Unterschiedlichen Fotograf Peter hilft Dir mit Traumfotos. </h4>
-
-                        <a href="#" class="btn-1"><h5>H5 Weitere Informationen</h5></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col8">
-                <div class="card card8">
-                    <div class="card-top">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/img-col-8-3.jpg" alt="" />
-                    </div>
-                    <div class="card-bottom">
-                        <h2>H2 Lorem net Ipsum esto </h2>
-                        <h4>H4 Unterschiedlichen Sets. Fotograf Peter Sturn als professioneller Fotograf hilft Dir mit seinem Team bei der Erstellung Deiner Traumfotos. </h4>
-
-                        <a href="#" class="btn-1"><h5>H5 Weitere Informationen</h5></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col12">
-                <div class="section-title">
-                    <h3>H3 Monatsspecial</h3>
-                    <h1>H1 Lorem Ipsum</h1>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col4">
-                <div class="card-small card4">
-                    <div class="card-top">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/img-4-4.jpg" alt=""/>
-                    </div>
-                    <div class="card-bottom">
-                        <h3>H3 Monatsspecial</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col4">
-                <div class="card-small card4">
-                    <div class="card-top">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/img-4-5.jpg" alt=""/>
-                    </div>
-                    <div class="card-bottom">
-                        <h3>H3 Monatsspecial</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col4">
-                <div class="card-small card4">
-                    <div class="card-top">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/img-4-6.jpg" alt=""/>
-                    </div>
-                    <div class="card-bottom">
-                        <h3>H3 Monatsspecial</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col4">
-                <div class="card-small card4">
-                    <div class="card-top">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/img-4-7.jpg" alt=""/>
-                    </div>
-                    <div class="card-bottom">
-                        <h3>H3 Monatsspecial</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col4">
-                <div class="card-small card4">
-                    <div class="card-top">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/img-4-8.jpg" alt=""/>
-                    </div>
-                    <div class="card-bottom">
-                        <h3>H3 Monatsspecial</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col4">
-                <div class="card-small card4">
-                    <div class="card-top">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/img-4-9.jpg" alt=""/>
-                    </div>
-                    <div class="card-bottom">
-                        <h3>H3 Monatsspecial</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        <?php if ( have_posts() ) : ?>
+            <?php while ( have_posts() ) : the_post(); ?>
+                <?php the_content(); ?>
+            <?php endwhile; ?>
+        <?php endif; ?>
 
     </main>
 

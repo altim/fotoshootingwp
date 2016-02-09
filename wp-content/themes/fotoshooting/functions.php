@@ -61,3 +61,8 @@ if(function_exists("register_sidebar")){
     register_sidebar(array("name"=>"Social_menu", "id"=>"Social_menu"));
 
 }
+
+/**
+ * Include shortcodes file
+ */
+require_once("shortcodes.php");
