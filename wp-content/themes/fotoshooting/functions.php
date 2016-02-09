@@ -9,6 +9,9 @@ add_theme_support( 'automatic-feed-links' );
 define("THEME_DIR", get_template_directory_uri());
 
 
+remove_filter('the_content', 'wpautop');
+
+
 /**
  * Enqueue scripts
  */
@@ -61,6 +64,7 @@ if(function_exists("register_sidebar")){
     register_sidebar(array("name"=>"Social_menu", "id"=>"Social_menu"));
 
 }
+
 
 /**
  * Include shortcodes file
