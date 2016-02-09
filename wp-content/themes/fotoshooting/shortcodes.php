@@ -190,3 +190,45 @@ function small_card_func( $atts ) {
     return $html;
 }
 add_shortcode( 'small_card', 'small_card_func' );
+
+
+function white_box_start_func( $atts ) {
+    extract(shortcode_atts(array(
+        'title' => ''
+    ), $atts));
+
+    $html = "";
+
+    $html.='<div class="white-box">';
+    $html.='<div class="row">';
+    $html.='    <div class="col12">';
+    $html.='        <h2>'.$title.'</h2>';
+    $html.='    </div>';
+    $html.='</div>';
+
+    return $html;
+}
+add_shortcode( 'white_box_start', 'white_box_start_func' );
+
+
+function white_box_end_func(  ) {
+    return "</div>";
+}
+add_shortcode( 'white_box_end', 'white_box_end_func' );
+
+
+function wb_button_func( $atts ) {
+    extract(shortcode_atts(array(
+        'url' => '',
+        'button_text' => ''
+    ), $atts));
+
+    $html = "";
+
+    $html.='<div class="col3">';
+    $html.='    <a href="'.$url.'" class="btn-1 btn-block"><h5>'.$button_text.'</h5></a>';
+    $html.='</div>';
+
+    return $html;
+}
+add_shortcode( 'wb_button', 'wb_button_func' );
